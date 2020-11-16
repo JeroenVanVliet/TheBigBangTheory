@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <title>The Big Bang Theory - Webshop</title>
+    </head>
+    <body>
+        <nav class="navigation-mobile-menu close">
+            <figure>
+                <img src="img/tbbt-logo-transparent.png" alt="logo van the big bang theory">
+                <figcaption>Logo van the big bang theory</figcaption>
+            </figure>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about" >Verhaal</a></li>
+                <li><a href="cast.html">Cast</a></li>
+                <li><a href="afleveringen.html">Afleveringen</a></li>
+                <li><a href="webshop.html" class="active">Webshop</a></li>
+            </ul>
+        </nav>
+        <header class="webshop-header">
+            <h2>Gratis Verzending. Voor alle bestellingen boven de &euro;40,00</h2>
+        </header>
+        <main>
+            <article id="products">
+                <h2>Producten</h2>
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/tshirt-bazinga.jpg" alt="t-shirt van the big bang theory">
+                        <figcaption>T-shirt van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Bazinga! T-shirt man</h2>
+                    <p class="price">&euro; 24,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/tshirt-bazinga-w.jpg" alt="t-shirt van the big bang theory">
+                        <figcaption>T-shirt van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Bazinga! T-shirt vrouw</h2>
+                    <p class="price">&euro; 24,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/tshirt-spock-paper.jpg" alt="t-shirt van the big bang theory">
+                        <figcaption>T-shirt van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Rock Paper Scissors Lizard Spock! T-shirt</h2>
+                    <p class="price">&euro; 24,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/funko-pop-penny.jpg" alt="funko pop van the big bang theory">
+                        <figcaption>funko pop van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Funko Pop! Penny</h2>
+                    <p class="price">&euro; 14,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/mok.jpg" alt="mok van the big bang theory">
+                        <figcaption>mok van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Spock Mok</h2>
+                    <p class="price">&euro; 14,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/bazinga-mok.jpg" alt="mok van the big bang theory">
+                        <figcaption>mok van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Bazinga Mok</h2>
+                    <p class="price">&euro; 14,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/monopoly.jpg" alt="monopoly van the big bang theory">
+                        <figcaption>monopoly van the big bang theory</figcaption>
+                    </figure>
+                    <h2>Monopoly spel</h2>
+                    <p class="price">&euro; 44,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/cluedo.jpg" alt="cluedo van the big bang theory">
+                        <figcaption>cluedo van the big bang theory</figcaption>
+                    </figure>
+                    <h2>cluedo spel</h2>
+                    <p class="price">&euro; 44,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+                <section class="product-wrapper" onclick="bestelProduct(this)">
+                    <figure>
+                        <img src="img/producten/trivial-persuit.jpg" alt="trivial-persuit van the big bang theory">
+                        <figcaption>trivial persuit van the big bang theory</figcaption>
+                    </figure>
+                    <h2>trivial persuit spel</h2>
+                    <p class="price">&euro; 44,99</p>
+                    <a class="order-btn">Bestel</a>
+                </section>
+
+            </article>
+        </main>
+        <article id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-modal">&times;</span>
+                    <h2 class="product-name">product</h2>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <img class="modal-image" src="#" alt="prooduct naam">
+                        <figcaption>Dit is een afbeelding van een product</figcaption>
+                    </figure>
+                    <p class="product-information">Some text in the Modal Body</p>
+                    <form action="#" method="post">
+                        <p>
+                            <label for="Naam" class="floatLabel">Naam</label>
+                            <input id="Naam" name="text" type="text">
+                        </p>
+                        <p>
+                            <label for="Adres" class="floatLabel">Adres</label>
+                            <input id="Adres" name="text" type="text">
+                        </p>
+                        <p>
+                            <label for="Email" class="floatLabel">Email</label>
+                            <input id="Email" name="Email" type="email">
+                        </p>
+                        <p>
+                            <label for="Telefoon" class="floatLabel">Telefoon nummer</label>
+                            <input id="Telefoon" name="telefoon" type="text">
+                        </p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="quantity">
+                        <button class="min-btn">-</button>
+                        <p class="qty">1</p>
+                        <button class="plus-btn">+</button>
+                    </div>
+                    <p class="modal-price">0,00</p>
+                    <button class="order">Bestel nu</button>
+                </div>
+            </div>
+        </article>
+        <div id="navigation-mobile-button" class="open">
+            <div class="nav-icon">
+                <div></div>
+            </div>
+        </div>
+        <footer>
+            <p>Website door Jeroen van Vliet (1119917) - Bron: <a href="https://nl.wikipedia.org/wiki/The_Big_Bang_Theory_(televisieserie)" target="_blank">Wikipedia</a> en <a href="https://www.imdb.com/title/tt0898266/" target="_blank">IMDb</a></p>
+        </footer>
+        <script src="js/app.js"></script>
+        <script src="js/webshop.js"></script>
+    </body>
+</html>
